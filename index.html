@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#141310">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐝%3C/text%3E%3C/svg%3E">
+<title>Danfamla — Web Developer for Hire</title>
+<meta name="author" content="Danfamla">
+<meta name="description" content="I build websites and Telegram bots with AI. Fast delivery, clear pricing.">
+<meta property="og:title" content="Danfamla — Web Developer for Hire">
+<meta property="og:description" content="I build websites and Telegram bots with AI. Fast delivery, clear pricing.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=JetBrains+Mono:wght@400&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: dark;
+  --bg:#141310; --surface:#1d1b15; --line:#35311f;
+  --text:#f3efe4; --muted:#a8a28d; --amber:#ffc21a; --ink:#1a1405;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+.page{position:relative;min-height:100vh;min-height:100svh;overflow:hidden}
+.fx{position:absolute;pointer-events:none}
+.hex{inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34zM28 100V66M0 84l28-16 28 16' fill='none' stroke='%23ffc21a' stroke-opacity='.07'/%3E%3C/svg%3E")}
+.glow{top:-160px;left:50%;width:800px;height:500px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(closest-side,rgba(255,194,26,.18),transparent)}
+.glow2{bottom:-190px;right:-130px;width:620px;height:420px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,140,0,.15),transparent)}
+.vig{inset:0;background:radial-gradient(ellipse at center,transparent 45%,var(--bg) 100%)}
+.in{position:relative;max-width:64rem;margin:0 auto;padding:2.5rem max(1.5rem,env(safe-area-inset-right)) 3rem max(1.5rem,env(safe-area-inset-left));display:flex;flex-direction:column;min-height:100vh;min-height:100svh}
+.top{display:flex;justify-content:flex-end;align-items:center;gap:.75rem;font:400 .9rem "JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;color:var(--muted)}
+.mark{position:relative;width:2.5rem;height:2.5rem;display:flex;align-items:center;justify-content:center}
+.mark i{display:block;width:1rem;height:1rem;background:var(--amber);clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%)}
+.orbit{position:absolute;inset:0;animation:spin 7s linear infinite}
+.orbit svg{position:absolute;top:0;left:50%;width:20px;height:15px;transform:translate(-50%,-50%)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero{flex:1;display:flex;flex-direction:column;justify-content:center;padding:4rem 0}
+h1{margin:1rem 0 0;font:700 clamp(3rem,14vw,9rem)/.95 "Space Grotesk","Arial Black",system-ui,sans-serif;letter-spacing:-.03em}
+.o{color:transparent;-webkit-text-stroke:2px #c9c4b5}
+.g{background:linear-gradient(180deg,#ffd23f,#f59e0b);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{margin:2rem 0 0;max-width:36rem;font-size:clamp(1.1rem,3vw,1.3rem);color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.5rem}
+.chips span{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:.25rem .8rem;font:400 .8rem "JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;color:var(--muted)}
+.btn{display:inline-block;margin-top:2.5rem;background:var(--amber);color:var(--ink);font:600 1rem/1 "DM Sans",system-ui,sans-serif;padding:1rem 1.6rem;border-radius:.6rem;text-decoration:none}
+@media(hover:hover){.btn:hover{filter:brightness(1.1)}}
+a:focus-visible{outline:3px solid var(--text);outline-offset:3px}
+.cards{display:grid;gap:2.6rem .9rem;grid-template-columns:1fr}
+@media(min-width:40rem){.cards{grid-template-columns:repeat(2,1fr)}}
+.card{position:relative;display:block;padding:1.25rem 1.25rem 1.4rem;border-radius:.8rem;color:var(--ink);text-decoration:none;background:linear-gradient(180deg,#ffd23f,#f2a600);box-shadow:0 12px 30px rgba(255,170,0,.14)}
+.card::after{content:"";position:absolute;left:10px;right:10px;bottom:-7px;height:10px;background:radial-gradient(circle at 12px 0,#f2a600 6px,transparent 7px) repeat-x;background-position:center top;background-size:26px 10px}
+.card div{display:flex;justify-content:space-between;font:700 1.05rem "Space Grotesk",system-ui,sans-serif}
+
+/* honey: only transform/opacity are animated (GPU-friendly, no repaints) */
+.sh{position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none}
+.sh::before{content:"";position:absolute;top:0;bottom:0;left:0;width:60%;background:linear-gradient(100deg,transparent,rgba(255,240,170,.5),transparent);transform:translateX(-100%);animation:sheen 10s ease-in-out infinite}
+@keyframes sheen{0%,100%{transform:translateX(-100%)}50%{transform:translateX(170%)}}
+.d{position:absolute;top:calc(100% - 2px);width:10px;height:36px;pointer-events:none;opacity:0;animation:fade var(--t,12s) linear infinite var(--dl,0s)}
+.d::before{content:"";position:absolute;top:0;left:0;right:0;height:34px;border-radius:0 0 6px 6px;background:linear-gradient(90deg,#f2a600,#ffc21a 50%,#f2a600);transform-origin:top;transform:scaleY(.1);animation:stretch var(--t,12s) ease-in infinite var(--dl,0s)}
+.d::after{content:"";position:absolute;top:-4px;left:50%;width:14px;height:14px;margin-left:-7px;border-radius:50% 50% 55% 55%;background:radial-gradient(circle at 35% 30%,#ffe580,#f2a600 70%);animation:fall var(--t,12s) ease-in infinite var(--dl,0s)}
+.d1{left:18%}
+.d2{left:68%;width:8px;--t:15s;--dl:-6s}
+@keyframes fade{0%{opacity:0}10%{opacity:1}80%{opacity:1}100%{opacity:0}}
+@keyframes stretch{0%{transform:scaleY(.1)}80%,100%{transform:scaleY(1)}}
+@keyframes fall{0%{transform:translateY(0)}80%,100%{transform:translateY(32px)}}
+.off .sh::before,.off .d,.off .d::before,.off .d::after{animation-play-state:paused}
+.card p{margin:.2rem 0 0;font:400 .8rem "JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;opacity:.75}
+@media(prefers-reduced-motion:reduce){.orbit,.sh::before,.d,.d::before,.d::after{animation:none}.d{opacity:1;height:14px}.d::before{transform:scaleY(.35)}.d::after{transform:none}html{scroll-behavior:auto}}
+@media(max-width:39.99rem){.hero{padding:2.5rem 0}.d2{display:none}}
+a,button{touch-action:manipulation}
+h1{text-wrap:balance}.tag{text-wrap:pretty}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="fx hex"></div><div class="fx glow"></div><div class="fx glow2"></div><div class="fx vig"></div>
+  <main class="in">
+    <header class="top">
+      <span class="mark" aria-hidden="true"><i></i>
+        <span class="orbit"><svg viewBox="0 0 32 24"><ellipse cx="11" cy="7" rx="6" ry="4" fill="#f3efe4" fill-opacity=".7"/><ellipse cx="19" cy="7" rx="6" ry="4" fill="#f3efe4" fill-opacity=".55"/><ellipse cx="15" cy="14" rx="10" ry="7" fill="#ffc21a"/><rect x="11" y="7.5" width="3.5" height="13" rx="1.75" fill="#141310"/><rect x="18" y="8" width="3.5" height="12" rx="1.75" fill="#141310"/></svg></span>
+      </span>
+      Available for projects
+    </header>
+
+    <section class="hero">
+      <h1><span class="o">Dan</span><span class="g">famla.</span></h1>
+      <p class="tag">I build websites and Telegram bots with AI. Fast delivery, clear pricing.</p>
+      <div class="chips"><span>Landing pages</span><span>Web applications</span><span>E-commerce</span><span>APIs &amp; bots</span></div>
+      <div><a class="btn" href="bio.html">Bio →</a></div>
+    </section>
+
+    <section aria-label="Social links" class="cards">
+      <a class="card" href="https://t.me/Danfamla" target="_blank" rel="noopener"><i class="sh"></i><i class="d d1"></i><i class="d d2"></i><div>Telegram <span>↗</span></div><p>@Danfamla</p></a>
+      <a class="card" href="https://github.com/Danfamla?tab=repositories" target="_blank" rel="noopener"><i class="sh"></i><i class="d d1"></i><i class="d d2"></i><div>My Projects <span>↗</span></div><p>@Danfamla</p></a>
+    </section>
+
+  </main>
+</div>
+<script>
+(function(){var c=document.querySelector('.cards');if(!c||!('IntersectionObserver' in window))return;
+new IntersectionObserver(function(e){c.classList.toggle('off',!e[0].isIntersecting)}).observe(c);})();
+</script>
+<script>
+/* honey drops: new random spots on every load, and again on every drip cycle */
+(function(){
+  var mq=window.matchMedia&&window.matchMedia('(max-width:39.99rem)');
+  function r(a,b){return a+Math.random()*(b-a);}
+  function place(d){
+    var phone=mq&&mq.matches, second=d.classList.contains('d2');
+    var x=second?r(58,90):(phone?r(10,90):r(10,42));
+    d.style.left=x.toFixed(1)+'%';
+  }
+  document.querySelectorAll('.cards .d').forEach(function(d){
+    place(d);
+    d.style.setProperty('--dl',r(0.3,3).toFixed(1)+'s');
+    d.addEventListener('animationiteration',function(e){
+      if(e.target===d&&e.animationName==='fade')place(d);
+    });
+  });
+})();
+</script>
+</body>
+</html>
